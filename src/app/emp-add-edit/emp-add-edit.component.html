@@ -1,1 +1,74 @@
-<p>emp-add-edit works!</p>
+<div mat-dialog-title>
+  <h2>Employee form</h2>
+</div>
+<div mat-dialog-content class="content">
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="John" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="Doe" />
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" placeholder="John" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Date of Birth</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input matStartDate placeholder="Start date" />
+        <input matEndDate placeholder="End date" />
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+  </div>
+
+  <div class="row">
+    <mat-radio-group name="gender">
+      <mat-label><b>Gender</b></mat-label>
+      <mat-radio-button value="male">Male</mat-radio-button>
+      <mat-radio-button value="female">Female</mat-radio-button>
+      <mat-radio-button value="other">Other</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Employee Type</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let val of employeeType" [value]="val">
+          {{ val }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Designation</mat-label>
+      <input matInput placeholder="Manager" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="outline">
+      <mat-label>Years of experience</mat-label>
+      <input matInput placeholder="1" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Expected Salary</mat-label>
+      <input matInput placeholder="15 000" />
+      <mat-hint>Lankan Rupees</mat-hint>
+    </mat-form-field>
+  </div>
+</div>
+<div mat-dialog-actions class="action">
+  <button mat-raised-button>Cancel</button>
+  <button mat-raised-button color="primary">Submit</button>
+</div>
