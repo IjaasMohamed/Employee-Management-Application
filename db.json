@@ -18,28 +18,40 @@
   },
   "employees": [
     {
-      "firstName": "Ijas",
-      "lastName": "Moh",
-      "email": "ij@gmail.com",
-      "dob": "2023-03-14T03:00:00.000Z",
-      "gender": "",
-      "employeeType": "Other",
-      "designation": "Intern",
-      "yearsOfExperience": "2",
-      "expectedSalary": "20000",
+      "firstName": "new",
+      "lastName": "user1",
+      "email": "new@gmail.com",
+      "dob": "2023-03-15T03:00:00.000Z",
+      "gender": "male",
+      "employeeType": "Contract-Basis",
+      "designation": "Senior",
+      "yearsOfExperience": "3",
+      "expectedSalary": "50000",
       "id": 1
     },
     {
-      "firstName": "test",
-      "lastName": "User",
-      "email": "test@gmail.com",
-      "dob": "2023-03-15T03:00:00.000Z",
-      "gender": "",
+      "firstName": "start",
+      "lastName": "user",
+      "email": "start@gmail.com",
+      "dob": "2023-03-23T03:00:00.000Z",
+      "gender": "female",
       "employeeType": "Contract-Basis",
-      "designation": "senior",
-      "yearsOfExperience": "3",
+      "designation": "Junior",
+      "yearsOfExperience": "5",
       "expectedSalary": "200000",
-      "id": 2
+      "id": 3
+    },
+    {
+      "firstName": "new",
+      "lastName": "user1",
+      "email": "new@gmail.com",
+      "dob": "2023-03-15T03:00:00.000Z",
+      "gender": "male",
+      "employeeType": "Contract-Basis",
+      "designation": "Senior",
+      "yearsOfExperience": "3",
+      "expectedSalary": "50000",
+      "id": 4
     }
   ]
 }
