@@ -38,7 +38,7 @@
     <!-- dob Column -->
     <ng-container matColumnDef="dob">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Of Birth</th>
-      <td mat-cell *matCellDef="let row">{{ row.dob }}</td>
+      <td mat-cell *matCellDef="let row">{{ row.dob | date }}</td>
     </ng-container>
 
     <!-- gender Column -->
@@ -68,7 +68,9 @@
     <!-- expectedSalary Column -->
     <ng-container matColumnDef="expectedSalary">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Salary</th>
-      <td mat-cell *matCellDef="let row">{{ row.expectedSalary }}</td>
+      <td mat-cell *matCellDef="let row">
+        {{ row.expectedSalary | currency : "LKR" }}
+      </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
