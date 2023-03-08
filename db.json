@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "Ijas",
+      "lastName": "Moh",
+      "email": "ij@gmail.com",
+      "dob": "2023-03-14T03:00:00.000Z",
+      "gender": "",
+      "employeeType": "Other",
+      "designation": "Intern",
+      "yearsOfExperience": "2",
+      "expectedSalary": "20000",
+      "id": 1
+    },
+    {
+      "firstName": "test",
+      "lastName": "User",
+      "email": "test@gmail.com",
+      "dob": "2023-03-15T03:00:00.000Z",
+      "gender": "",
+      "employeeType": "Contract-Basis",
+      "designation": "senior",
+      "yearsOfExperience": "3",
+      "expectedSalary": "200000",
+      "id": 2
+    }
+  ]
+}
